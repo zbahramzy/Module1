@@ -4,9 +4,10 @@ public class Animal {
     private int yCoordinate;
 
     // constructor, initialises animal position
-    public Animal(int xInitialCoordinate, int yInitialCoordinate) {
+    public Animal(int xInitialCoordinate, int yInitialCoordinate) { //String giveAnimal) {
         setXCoordinate(xInitialCoordinate);
         setYCoordinate(yInitialCoordinate);
+        //this.giveAnimal = giveAnimal;
     }
 
     // getters, return current animal position
@@ -18,13 +19,19 @@ public class Animal {
 
     // animal speak method
     public void speak(String sentence) {
-        if (sentence.equals("rabbit")){
+        if (sentence.equalsIgnoreCase("rabbit position")){
+            System.out.println("I am the Rabbit, I'm now standing on square " + getXCoordinate() + ", " + getYCoordinate());
+        }
+        else if (sentence.equalsIgnoreCase("rabbit please")) {
             System.out.println("Noooooo Please don't eat me!!");
         }
-        else {
+        else if (sentence.equalsIgnoreCase("snake position"))
+        {
+            System.out.println("I am the Snake, I'm now standing on square " + getXCoordinate() + ", " + getYCoordinate());
+        }
+        else if (sentence.equalsIgnoreCase("snake eat")) {
             System.out.println("Ahhrrrrrrr I'm eating you ha ha!");
         }
-
     }
 
     // animal move method
