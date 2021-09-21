@@ -4,10 +4,9 @@ public class Animal {
     private int yCoordinate;
 
     // constructor, initialises animal position
-    public Animal(int xInitialCoordinate, int yInitialCoordinate) { //String giveAnimal) {
+    public Animal(int xInitialCoordinate, int yInitialCoordinate) {
         setXCoordinate(xInitialCoordinate);
         setYCoordinate(yInitialCoordinate);
-        //this.giveAnimal = giveAnimal;
     }
 
     // getters, return current animal position
