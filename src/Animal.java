@@ -18,7 +18,13 @@ public class Animal {
 
     // animal speak method
     public void speak(String sentence) {
-        System.out.println(sentence);
+        if (sentence.equals("rabbit")){
+            System.out.println("Noooooo Please don't eat me!!");
+        }
+        else {
+            System.out.println("Ahhrrrrrrr I'm eating you ha ha!");
+        }
+
     }
 
     // animal move method
